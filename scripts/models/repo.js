@@ -8,7 +8,7 @@
        reposObj.allRepos = data;
      }),
      $.get('/github/users/jmpaik/followers', function(data){
-       reposObj.allRepos = data;
+       reposObj.followers = data;
      })
     ).done(callback);
   };
